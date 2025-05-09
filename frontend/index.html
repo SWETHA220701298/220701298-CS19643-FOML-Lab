@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Face Analyzer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <nav>
+      <a href="index.html">Skin Analyzer</a> |
+      <a href="outfit.html">Outfit Recommender</a>
+    </nav>
+    
+    <h1>Face Analysis & Skincare Tips</h1>
+
+    <input type="file" id="imageUpload" accept="image/*" />
+    <div id="previewContainer">
+      <img id="imagePreview" src="" alt="Image Preview" />
+    </div>
+
+    <button onclick="submitImage()">Analyze Face</button>
+
+    <div id="resultContainer" class="hidden">
+      <h2>Skin Analysis Result</h2>
+      <p><strong>Skin Tone:</strong> <span id="toneResult"></span></p>
+      <p><strong>Skin Texture:</strong> <span id="textureResult"></span></p>
+      <p><strong>AI Tip:</strong> <span id="tipResult"></span></p>
+
+      <h3>Recommended Products</h3>
+      <ul id="productList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
